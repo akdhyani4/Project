@@ -174,16 +174,44 @@ public class Calculator implements ActionListener
 		else if(e.getSource()==b14)
 		{
 			s1=tf.getText();
-			tf.setText("");	
-			c=5;
-		}
-		
-		/*else if(e.getSource()==b15)
-		{
-			s1=tf.getText();
 			
-		}*/
-		
+			if(c==1)
+			{
+				n=Integer.parseInt(s1)+Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==2)
+			{
+				n=Integer.parseInt(s1)-Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==3)
+			{
+				n=Integer.parseInt(s1)*Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==4)
+			{
+				try
+				{
+					int p=Integer.parseInt(s2);
+					if(p!=0)
+					{
+						n=Integer.parseInt(s1)/Integer,parseInt(s2);
+						tf.setText(String.valueOf(n));
+					}
+					else
+						tf.setText("Infinite");
+				}
+				catch(Exception i)
+				{
+				}
+			}
+		}
+		else if(e.getSource()==b15)
+		{
+			tf.setText("");
+		}
 	}
 	
 	public static void main(String args[])
