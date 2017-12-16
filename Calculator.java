@@ -80,53 +80,115 @@ public class Calculator implements ActionListener
 		if(e.getSource()==b0)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"0");	
+			s2="0";
+			s3=s1+s2;
+			tf.setText(s3);	
 		}
 		else if(e.getSource()==b1)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"1");	
+			s2="1";
+			s3=s1+s2;
+			tf.setText(s3);	
 		}
 		else if(e.getSource()==b2)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"2");	
+			s2="2";
+			s3=s1+s2;
+			tf.setText(s3);	
 		}
 		else if(e.getSource()==b3)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"3");	
+			s2="3";
+			s3=s1+s2;
+			tf.setText(s3);
 		}
 		else if(e.getSource()==b4)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"4");	
+			s2="4";
+			s3=s1+s2;
+			tf.setText(s3);	
 		}
 		else if(e.getSource()==b5)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"5");	
+			s2="5";
+			s3=s1+s2;
+			tf.setText(s3);	
 		}
 		else if(e.getSource()==b6)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"6");	
+			s2="6";
+			s3=s1+s2;
+			tf.setText(s3);
 		}
 		else if(e.getSource()==b7)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"7");	
+			s2="7";
+			s3=s1+s2;
+			tf.setText(s3);
 		}
 		else if(e.getSource()==b8)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"8");	
+			s2="8";
+			s3=s1+s2;
+			tf.setText(s3);
 		}
 		else if(e.getSource()==b9)
 		{
 			s1=tf.getText();
-			tf.setText(s1+"9");	
+			s2="9";
+			s3=s1+s2;
+			tf.setText(s3);
 		}
+		else if(e.getSource()==b10)
+		{
+			s1=tf.getText();
+			tf.setText("");	
+			c=1;
+		}
+		else if(e.getSource()==b11)
+		{
+			s1=tf.getText();
+			tf.setText("");	
+			c=2;
+		}
+		else if(e.getSource()==b12)
+		{
+			s1=tf.getText();
+			tf.setText("");	
+			c=3;
+		}
+		else if(e.getSource()==b13)
+		{
+			s1=tf.getText();
+			tf.setText("");	
+			c=4;
+		}
+		else if(e.getSource()==b14)
+		{
+			s1=tf.getText();
+			tf.setText("");	
+			c=5;
+		}
+		
+		/*else if(e.getSource()==b15)
+		{
+			s1=tf.getText();
+			
+		}*/
+		
+	}
+	
+	public static void main(String args[])
+	{
+		Calculator C = new Calculator();
 	}
 }
 		
